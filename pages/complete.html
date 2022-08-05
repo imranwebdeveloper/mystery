@@ -21,7 +21,7 @@
   </head>
   <body>
     <main class="d-flex">
-      <aside class="sidebar d-flex flex-column">
+      <aside class="sidebar d-flex flex-column border-end">
         <div class="logo d-flex align-items-center">
           <h5>Mystery Monks</h5>
         </div>
@@ -64,7 +64,7 @@
             </li>
             <li class="list_link accordion" id="accordionExamplet">
               <button
-                class="accordion-button collapsed link"
+                class="accordion-button collapsed link link-active"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#tasks"
@@ -75,32 +75,35 @@
               </button>
               <div
                 id="tasks"
-                class="accordion-collapse collapse"
+                class="accordion-collapse collapse show"
                 aria-labelledby="headingOne"
                 data-bs-parent="#accordionExample"
               >
                 <ul class="dropdown_menu">
                   <li>
-                    <a href="./posted.html">Posted Task</a>
-                  </li>
-                  <li>
                     <a href="./ongoing.html">Ongoing Task </a>
                   </li>
                   <li>
-                    <a href="./complete.html">Completed Task</a>
+                    <a href="./complete.html" class="link-active"
+                      >Completed Task</a
+                    >
                   </li>
                   <li>
-                    <a href=""> Cancelled Task</a>
+                    <a href="./cancel.html"> Cancelled Task</a>
                   </li>
                 </ul>
               </div>
             </li>
 
             <li class="list_link">
-              <a href="" class="link"><i class="bi bi-gear"></i> Setting </a>
+              <a href="./setting.html" class="link"
+                ><i class="bi bi-gear"></i> Setting
+              </a>
             </li>
             <li class="list_link">
-              <a href="" class="link"><i class="bi bi-info-circle"></i>Help</a>
+              <a href="./help.html" class="link"
+                ><i class="bi bi-info-circle"></i>Help</a
+              >
             </li>
             <li class="list_link">
               <a href="" class="link">
@@ -113,7 +116,7 @@
       <!-- =============== Sidebar end ============ -->
       <section class="main_section flex-grow-1">
         <header
-          class="header d-flex justify-content-end align-items-center gap-4"
+          class="header d-flex justify-content-end align-items-center gap-4 py-1 px-2 bg-white"
         >
           <div role="button" class="position-relative">
             <span class="p-2 budge_area fs-4 rounded-circle">
@@ -127,7 +130,7 @@
           </div>
 
           <div class="profile">
-            <div class="d-flex profile_container">
+            <div class="d-flex py-1">
               <div class="profile_img">
                 <span class="info_icon">
                   <i class="bi bi-person-circle"></i>
@@ -151,281 +154,283 @@
             </div> -->
           </div>
         </header>
-        <section class="card_section p-4">
-          <h4 class="text_dark mb-4">Complete Tasks (6)</h4>
-          <div class="input-group flex-nowrap w-25 my-2">
-            <span class="input-group-text" id="addon-wrapping"
-              ><i class="bi bi-search"></i
-            ></span>
-            <input
-              type="text"
-              class="form-control py-2"
-              placeholder="Search here..."
-              aria-label="Username"
-              aria-describedby="addon-wrapping"
-            />
-          </div>
-          <table class="table">
-            <thead class="text_dark bg_secondary">
-              <tr>
-                <th scope="col">Task</th>
-                <th scope="col">Started On</th>
-                <th scope="col">Deadline</th>
-                <th scope="col">Assigned to</th>
-                <th scope="col">Budget</th>
-                <th scope="col">Status</th>
-              </tr>
-            </thead>
-            <tbody class="text_gray">
-              <tr>
-                <td>
-                  <strong class="text_dark">Animation Revisions </strong>
-                  <p>Professional Explainer Video</p>
-                </td>
-                <td>
-                  <time datetime="22-05-14"> 12 may 2022</time>
-                </td>
-                <td>
-                  <time datetime="2022-06-12">12 jun 2022</time>
-                </td>
-                <td>Bessie Cooper</td>
-                <td>$100</td>
-                <td>
-                  <div class="dropdown">
-                    <button
-                      class="btn w-100 text_dark dropdown-toggle"
-                      type="button"
-                      id="dropdownMenuButton1"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Complete
-                    </button>
-                    <ul
-                      class="dropdown-menu"
-                      aria-labelledby="dropdownMenuButton1"
-                    >
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li>
-                        <a class="dropdown-item" href="#">Another action</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#"
-                          >Something else here</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <strong class="text_dark">Animation Revisions </strong>
-                  <p>Professional Explainer Video</p>
-                </td>
-                <td>
-                  <time datetime="22-05-14"> 12 may 2022</time>
-                </td>
-                <td>
-                  <time datetime="2022-06-12">12 jun 2022</time>
-                </td>
-                <td>Bessie Cooper</td>
-                <td>$100</td>
-                <td>
-                  <div class="dropdown">
-                    <button
-                      class="btn w-100 text_dark dropdown-toggle"
-                      type="button"
-                      id="dropdownMenuButton1"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Ongoing
-                    </button>
-                    <ul
-                      class="dropdown-menu"
-                      aria-labelledby="dropdownMenuButton1"
-                    >
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li>
-                        <a class="dropdown-item" href="#">Another action</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#"
-                          >Something else here</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <strong class="text_dark">Animation Revisions </strong>
-                  <p>Professional Explainer Video</p>
-                </td>
-                <td>
-                  <time datetime="22-05-14"> 12 may 2022</time>
-                </td>
-                <td>
-                  <time datetime="2022-06-12">12 jun 2022</time>
-                </td>
-                <td>Bessie Cooper</td>
-                <td>$100</td>
-                <td>
-                  <div class="dropdown">
-                    <button
-                      class="btn w-100 text_dark dropdown-toggle"
-                      type="button"
-                      id="dropdownMenuButton1"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Ongoing
-                    </button>
-                    <ul
-                      class="dropdown-menu"
-                      aria-labelledby="dropdownMenuButton1"
-                    >
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li>
-                        <a class="dropdown-item" href="#">Another action</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#"
-                          >Something else here</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <strong class="text_dark">Animation Revisions </strong>
-                  <p>Professional Explainer Video</p>
-                </td>
-                <td>
-                  <time datetime="22-05-14"> 12 may 2022</time>
-                </td>
-                <td>
-                  <time datetime="2022-06-12">12 jun 2022</time>
-                </td>
-                <td>Bessie Cooper</td>
-                <td>$100</td>
-                <td>
-                  <div class="dropdown">
-                    <button
-                      class="btn w-100 text_dark dropdown-toggle"
-                      type="button"
-                      id="dropdownMenuButton1"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Ongoing
-                    </button>
-                    <ul
-                      class="dropdown-menu"
-                      aria-labelledby="dropdownMenuButton1"
-                    >
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li>
-                        <a class="dropdown-item" href="#">Another action</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#"
-                          >Something else here</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <strong class="text_dark">Animation Revisions </strong>
-                  <p>Professional Explainer Video</p>
-                </td>
-                <td>
-                  <time datetime="22-05-14"> 12 may 2022</time>
-                </td>
-                <td>
-                  <time datetime="2022-06-12">12 jun 2022</time>
-                </td>
-                <td>Bessie Cooper</td>
-                <td>$100</td>
-                <td>
-                  <div class="dropdown">
-                    <button
-                      class="btn w-100 text_dark dropdown-toggle"
-                      type="button"
-                      id="dropdownMenuButton1"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Ongoing
-                    </button>
-                    <ul
-                      class="dropdown-menu"
-                      aria-labelledby="dropdownMenuButton1"
-                    >
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li>
-                        <a class="dropdown-item" href="#">Another action</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#"
-                          >Something else here</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <strong class="text_dark">Animation Revisions </strong>
-                  <p>Professional Explainer Video</p>
-                </td>
-                <td>
-                  <time datetime="22-05-14"> 12 may 2022</time>
-                </td>
-                <td>
-                  <time datetime="2022-06-12">12 jun 2022</time>
-                </td>
-                <td>Bessie Cooper</td>
-                <td>$100</td>
-                <td>
-                  <div class="dropdown">
-                    <button
-                      class="btn w-100 text_dark dropdown-toggle"
-                      type="button"
-                      id="dropdownMenuButton1"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Ongoing
-                    </button>
-                    <ul
-                      class="dropdown-menu"
-                      aria-labelledby="dropdownMenuButton1"
-                    >
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li>
-                        <a class="dropdown-item" href="#">Another action</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#"
-                          >Something else here</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
+        <div class="px-4">
+          <section class="card_section p-4">
+            <h4 class="text_dark mb-4">Complete Tasks (6)</h4>
+            <div class="input-group flex-nowrap w-25 my-2">
+              <span class="input-group-text" id="addon-wrapping"
+                ><i class="bi bi-search"></i
+              ></span>
+              <input
+                type="text"
+                class="form-control py-2"
+                placeholder="Search here..."
+                aria-label="Username"
+                aria-describedby="addon-wrapping"
+              />
+            </div>
+            <table class="table border">
+              <thead class="text_dark bg_secondary">
+                <tr>
+                  <th scope="col">Task</th>
+                  <th scope="col">Started On</th>
+                  <th scope="col">Deadline</th>
+                  <th scope="col">Assigned to</th>
+                  <th scope="col">Budget</th>
+                  <th scope="col">Status</th>
+                </tr>
+              </thead>
+              <tbody class="text_gray">
+                <tr>
+                  <td>
+                    <strong class="text_dark">Animation Revisions </strong>
+                    <p>Professional Explainer Video</p>
+                  </td>
+                  <td>
+                    <time datetime="22-05-14"> 12 may 2022</time>
+                  </td>
+                  <td>
+                    <time datetime="2022-06-12">12 jun 2022</time>
+                  </td>
+                  <td>Bessie Cooper</td>
+                  <td>$100</td>
+                  <td>
+                    <div class="dropdown">
+                      <button
+                        class="btn w-100 text_dark dropdown-toggle"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Complete
+                      </button>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Another action</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Something else here</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong class="text_dark">Animation Revisions </strong>
+                    <p>Professional Explainer Video</p>
+                  </td>
+                  <td>
+                    <time datetime="22-05-14"> 12 may 2022</time>
+                  </td>
+                  <td>
+                    <time datetime="2022-06-12">12 jun 2022</time>
+                  </td>
+                  <td>Bessie Cooper</td>
+                  <td>$100</td>
+                  <td>
+                    <div class="dropdown">
+                      <button
+                        class="btn w-100 text_dark dropdown-toggle"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Ongoing
+                      </button>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Another action</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Something else here</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong class="text_dark">Animation Revisions </strong>
+                    <p>Professional Explainer Video</p>
+                  </td>
+                  <td>
+                    <time datetime="22-05-14"> 12 may 2022</time>
+                  </td>
+                  <td>
+                    <time datetime="2022-06-12">12 jun 2022</time>
+                  </td>
+                  <td>Bessie Cooper</td>
+                  <td>$100</td>
+                  <td>
+                    <div class="dropdown">
+                      <button
+                        class="btn w-100 text_dark dropdown-toggle"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Ongoing
+                      </button>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Another action</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Something else here</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong class="text_dark">Animation Revisions </strong>
+                    <p>Professional Explainer Video</p>
+                  </td>
+                  <td>
+                    <time datetime="22-05-14"> 12 may 2022</time>
+                  </td>
+                  <td>
+                    <time datetime="2022-06-12">12 jun 2022</time>
+                  </td>
+                  <td>Bessie Cooper</td>
+                  <td>$100</td>
+                  <td>
+                    <div class="dropdown">
+                      <button
+                        class="btn w-100 text_dark dropdown-toggle"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Ongoing
+                      </button>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Another action</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Something else here</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong class="text_dark">Animation Revisions </strong>
+                    <p>Professional Explainer Video</p>
+                  </td>
+                  <td>
+                    <time datetime="22-05-14"> 12 may 2022</time>
+                  </td>
+                  <td>
+                    <time datetime="2022-06-12">12 jun 2022</time>
+                  </td>
+                  <td>Bessie Cooper</td>
+                  <td>$100</td>
+                  <td>
+                    <div class="dropdown">
+                      <button
+                        class="btn w-100 text_dark dropdown-toggle"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Ongoing
+                      </button>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Another action</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Something else here</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong class="text_dark">Animation Revisions </strong>
+                    <p>Professional Explainer Video</p>
+                  </td>
+                  <td>
+                    <time datetime="22-05-14"> 12 may 2022</time>
+                  </td>
+                  <td>
+                    <time datetime="2022-06-12">12 jun 2022</time>
+                  </td>
+                  <td>Bessie Cooper</td>
+                  <td>$100</td>
+                  <td>
+                    <div class="dropdown">
+                      <button
+                        class="btn w-100 text_dark dropdown-toggle"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Ongoing
+                      </button>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Another action</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Something else here</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </div>
       </section>
     </main>
     <script src="../assert//js/bootstrap.bundle.min.js"></script>

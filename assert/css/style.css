@@ -2,7 +2,7 @@
   --text-primary: gray;
   --text-secondary: rgb(53, 52, 52);
   --text-dark: #34495e;
-  --text-hight-light: #ff4500;
+  --text-orange: #ff4500;
   --text-white: white;
   --background-primary: #eee;
   --background-secondary: #ffebcd;
@@ -10,6 +10,7 @@
   --background-gray: gray;
   --background-orange: #ff4500;
   --list-active: #ffebcd;
+  --list-active-text: #ff4500;
   --button-primary: #ff4500;
 }
 
@@ -37,9 +38,7 @@ main {
   left: 0;
 }
 .main_section {
-  padding: 0 2rem;
   margin-left: 250px;
-  margin-bottom: 1rem;
 }
 
 .section {
@@ -49,7 +48,7 @@ main {
   color: var(--text-dark);
 }
 .text_orange {
-  color: var(--text-hight-light);
+  color: var(--text-orange);
 }
 .text_gray {
   color: var(--text-primary);
@@ -60,14 +59,21 @@ main {
 .bg_orange {
   background: var(--background-orange);
 }
+.btn_primary {
+  background-color: var(--button-primary);
+  color: var(--text-white);
+  border-radius: 8px;
+  min-width: 120px;
+  padding: 0.5rem 1.5rem;
+}
+/* ---------------------------------- Logo ---------------------------------- */
 
-/* ========================Logo======================= */
 .logo {
   height: 100px;
   padding: 0 1.5rem;
-  color: var(--text-hight-light);
+  color: var(--text-orange);
 }
-/* =========================Navigation & Menu ================== */
+/* ---------------------------- Manu & Navigation --------------------------- */
 .nav {
   flex: 1;
 }
@@ -83,10 +89,10 @@ main {
   cursor: pointer;
 }
 .list_link:hover button {
-  color: var(--text-hight-light);
+  color: var(--text-orange);
 }
 .list_link button::after:hover {
-  color: var(--text-hight-light);
+  color: var(--text-orange);
 }
 .link {
   padding: 0.5rem 1rem;
@@ -95,7 +101,7 @@ main {
   align-items: center;
 }
 .list_link:hover > a {
-  color: var(--text-hight-light);
+  color: var(--text-orange);
 }
 .link i {
   font-size: 1.5rem;
@@ -116,7 +122,7 @@ main {
   color: rgb(53, 52, 52);
 }
 .dropdown_menu li:hover a {
-  color: var(--text-hight-light);
+  color: var(--text-orange);
 }
 #custom_accordion:not(.collapsed) {
   color: var(--text-secondary);
@@ -124,7 +130,7 @@ main {
   font-weight: normal;
   box-shadow: none;
 }
-/* ===========================Main section===================== */
+/* ------------------------------ Main Section ------------------------------ */
 .budge_area {
   background: rgba(229, 225, 225, 0.867);
 }
@@ -132,9 +138,7 @@ main {
   background: var(--background-orange);
   color: var(--text-white);
 }
-.profile_container {
-  padding: 1rem 0;
-}
+
 .profile_img {
   padding-right: 1rem;
 }
@@ -146,31 +150,36 @@ main {
 }
 .info_icon {
   font-size: 2.5rem;
-  color: var(--text-hight-light);
+  color: var(--text-orange);
 }
-.btn_primary {
-  background-color: var(--button-primary);
-  color: var(--text-white);
-  border-radius: 8px;
-  min-width: 120px;
-  padding: 0.5rem 1.5rem;
-}
-/* ================accordion-item========== */
 
+/* ----------------------------- accordion-item ----------------------------- */
 .tag li {
   list-style: none;
   background: var(--background-primary);
   padding: 0.5rem 1rem;
   border-radius: 1rem;
 }
-/* ========================== Request notification info =================== */
+/* ------------------------ notification info ----------------------- */
 .card_section {
   background: var(--background-white);
   border-radius: 8px;
   margin-top: 1.5rem;
 }
+/* ---------------------------------- Modal --------------------------------- */
 
-/* ==================model==================== */
 .model_style {
-  min-width: 600px;
+  max-width: 600px;
+}
+/* -------------------------------------------------------------------------- */
+/*                                 Login Page                                 */
+/* -------------------------------------------------------------------------- */
+
+.form-container {
+  max-width: 500px;
+}
+/* --------------------------------- Active --------------------------------- */
+.link-active {
+  color: var(--list-active-text);
+  font-weight: bold;
 }
