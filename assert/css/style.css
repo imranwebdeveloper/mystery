@@ -30,15 +30,13 @@ main {
 }
 
 .sidebar {
-  background: var(--background-white);
-  width: 250px;
-  position: fixed;
-  min-height: 100vh;
-  top: 0;
-  left: 0;
+  min-width: 250px;
 }
-.main_section {
-  margin-left: 250px;
+
+@media (min-width: 992px) {
+  .main_section {
+    margin-left: 250px;
+  }
 }
 
 .section {
@@ -59,6 +57,9 @@ main {
 .bg_orange {
   background: var(--background-orange);
 }
+.bg_gray {
+  background: var(--background-gray);
+}
 .btn_primary {
   background-color: var(--button-primary);
   color: var(--text-white);
@@ -66,12 +67,10 @@ main {
   min-width: 120px;
   padding: 0.5rem 1.5rem;
 }
-/* ---------------------------------- Logo ---------------------------------- */
+/* ---------------------------------- logo text-center justify-content-center text_orange ---------------------------------- */
 
 .logo {
   height: 100px;
-  padding: 0 1.5rem;
-  color: var(--text-orange);
 }
 /* ---------------------------- Manu & Navigation --------------------------- */
 .nav {
@@ -84,14 +83,13 @@ main {
   margin: 0;
   padding: 0;
 }
-.list_link {
-  margin-right: 1rem;
+.link_list {
   cursor: pointer;
 }
-.list_link:hover button {
+.link_list:hover button {
   color: var(--text-orange);
 }
-.list_link button::after:hover {
+.link_list button::after:hover {
   color: var(--text-orange);
 }
 .link {
@@ -100,7 +98,7 @@ main {
   display: flex;
   align-items: center;
 }
-.list_link:hover > a {
+.link_list:hover > a {
   color: var(--text-orange);
 }
 .link i {
@@ -131,6 +129,9 @@ main {
   box-shadow: none;
 }
 /* ------------------------------ Main Section ------------------------------ */
+#toggle {
+  cursor: pointer;
+}
 .budge_area {
   background: rgba(229, 225, 225, 0.867);
 }
